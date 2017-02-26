@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{30794ce8-5ce8-4842-9051-8222b052f685}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wolf">
+      <UniqueIdentifier>{b860bbb6-4567-45b0-af3d-d165d61f4b8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CityModel">
+      <UniqueIdentifier>{7c3cea93-521f-480b-9689-160a1cbb1889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CityModel">
+      <UniqueIdentifier>{ee1045dc-879b-46dc-8ce3-17e81e338b99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Interpolation">
+      <UniqueIdentifier>{89fc047d-3f6e-47e6-83f3-f1db584ebcd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Interpolation">
+      <UniqueIdentifier>{e01bb7ca-0be0-4392-9d1e-3e187517bac1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wolf\W_Buffer.h">
+      <Filter>wolf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wolf\W_BufferManager.h">
+      <Filter>wolf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wolf\W_Common.h">
+      <Filter>wolf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wolf\W_IndexBuffer.h">
+      <Filter>wolf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wolf\W_Material.h">
+      <Filter>wolf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wolf\W_MaterialManager.h">
+      <Filter>wolf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wolf\W_Program.h">
+      <Filter>wolf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wolf\W_ProgramManager.h">
+      <Filter>wolf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wolf\W_Texture.h">
+      <Filter>wolf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wolf\W_TextureManager.h">
+      <Filter>wolf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wolf\W_Types.h">
+      <Filter>wolf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wolf\W_VertexBuffer.h">
+      <Filter>wolf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wolf\W_VertexDeclaration.h">
+      <Filter>wolf</Filter>
+    </ClInclude>
+    <ClInclude Include="CityModelExample.h">
+      <Filter>Header Files\CityModel</Filter>
+    </ClInclude>
+    <ClInclude Include="InterpolationExample.h">
+      <Filter>Header Files\Interpolation</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wolf\W_Buffer.cpp">
+      <Filter>wolf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wolf\W_BufferManager.cpp">
+      <Filter>wolf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wolf\W_Common.cpp">
+      <Filter>wolf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wolf\W_IndexBuffer.cpp">
+      <Filter>wolf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wolf\W_Material.cpp">
+      <Filter>wolf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wolf\W_MaterialManager.cpp">
+      <Filter>wolf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wolf\W_Program.cpp">
+      <Filter>wolf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wolf\W_ProgramManager.cpp">
+      <Filter>wolf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wolf\W_Texture.cpp">
+      <Filter>wolf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wolf\W_TextureManager.cpp">
+      <Filter>wolf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wolf\W_VertexBuffer.cpp">
+      <Filter>wolf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wolf\W_VertexDeclaration.cpp">
+      <Filter>wolf</Filter>
+    </ClCompile>
+    <ClCompile Include="CityModelExample.cpp">
+      <Filter>Source Files\CityModel</Filter>
+    </ClCompile>
+    <ClCompile Include="InterpolationExample.cpp">
+      <Filter>Source Files\Interpolation</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shaders\interpolation.fsh">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\shaders\interpolation.vsh">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
