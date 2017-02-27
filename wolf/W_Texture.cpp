@@ -128,16 +128,24 @@ void Texture::LoadFromTGA(const std::string& p_strFile)
 
 	//check the file signature and deduce its format
 	fif = FreeImage_GetFileType(p_strFile.c_str(), 0);
+	if (fif == FIF_UNKNOWN)
+		fif = FreeImage_GetFIFFromFilename(p_strFile.c_str());
+
 	dib = FreeImage_Load(fif, p_strFile.c_str());
 	//retrieve the image data
 	bits = FreeImage_GetBits(dib);
 	m_uiWidth = FreeImage_GetWidth(dib);
 	m_uiHeight = FreeImage_GetHeight(dib);
-
-	glGenTextures(1,&m_uiTex);
+	long format;
+	switch (FreeImage_GetColorType(dib)) {
+	case FIC_RGB: format = GL_RGB; break;
+	case FIC_RGBALPHA: format = GL_RGBA; break;
+	default: format = GL_RGB; break;
+	}
+	glGenTextures(1, &m_uiTex);
 	glBindTexture(GL_TEXTURE_2D, m_uiTex);
 
-    glTexImage2D(GL_TEXTURE_2D, 0, fif, m_uiWidth, m_uiHeight, 0, fif, GL_UNSIGNED_BYTE, bits);
+    glTexImage2D(GL_TEXTURE_2D, 0, format, m_uiWidth, m_uiHeight, 0, format, GL_UNSIGNED_BYTE, bits);
     
    
     

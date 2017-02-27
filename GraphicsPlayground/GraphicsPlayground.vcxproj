@@ -166,8 +166,11 @@
     <ClInclude Include="..\wolf\W_Types.h" />
     <ClInclude Include="..\wolf\W_VertexBuffer.h" />
     <ClInclude Include="..\wolf\W_VertexDeclaration.h" />
+    <ClInclude Include="BlendExample.h" />
     <ClInclude Include="CityModelExample.h" />
     <ClInclude Include="InterpolationExample.h" />
+    <ClInclude Include="RotateCubeExample.h" />
+    <ClInclude Include="RotateTextureCubeExample.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
@@ -183,9 +186,12 @@
     <ClCompile Include="..\wolf\W_TextureManager.cpp" />
     <ClCompile Include="..\wolf\W_VertexBuffer.cpp" />
     <ClCompile Include="..\wolf\W_VertexDeclaration.cpp" />
+    <ClCompile Include="BlendExample.cpp" />
     <ClCompile Include="CityModelExample.cpp" />
     <ClCompile Include="InterpolationExample.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="RotateCubeExample.cpp" />
+    <ClCompile Include="RotateTextureCubeExample.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -194,12 +200,30 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\shaders\Blend.fsh">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </None>
     <None Include="..\shaders\interpolation.fsh">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\shaders\RotateCube.fsh">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\shaders\RotateTextureCube.fsh">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </None>
   </ItemGroup>
   <ItemGroup>
+    <FxCompile Include="..\shaders\Blend.vsh">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </FxCompile>
     <FxCompile Include="..\shaders\interpolation.vsh">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\shaders\RotateCube.vsh">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\shaders\RotateTextureCube.vsh">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </FxCompile>
   </ItemGroup>

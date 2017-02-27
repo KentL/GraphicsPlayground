@@ -6,6 +6,9 @@
 #include "GLFW\glfw3.h"
 #include <string>
 #include "InterpolationExample.h"
+#include "RotateCubeExample.h"
+#include "RotateTextureCubeExample.h"
+#include "BlendExample.h"
 
 static void error_callback(int error, const char* description)
 {
@@ -68,6 +71,9 @@ int main(int argc, char *argv[])
 	switch (exampleIndex)
 	{
 	case 0: InterpolationExample::Initialize(); break;
+	case 1: RotateCubeExample::Initialize(); break;
+	case 2: RotateTextureCubeExample::Initialize(); break;
+	case 3: BlendExample::Initialize(); break;
 	default:
 		break;
 	}
@@ -91,6 +97,9 @@ int main(int argc, char *argv[])
 		switch (exampleIndex)
 		{
 		case 0: InterpolationExample::Render(); break;
+		case 1: RotateCubeExample::Render(); break;
+		case 2: RotateTextureCubeExample::Render(); break;
+		case 3: BlendExample::Render(); break;
 		default:
 			break;
 		}
